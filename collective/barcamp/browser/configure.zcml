@@ -36,6 +36,13 @@
       name="barcampsession_view"
       />
 
+  <browser:page
+      for="*"
+      class=".eventview.BarcampAttendanceView"
+      permission="zope2.View"
+      template="templates/barcampattendance.pt"
+      name="attendance_view"
+      />
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
