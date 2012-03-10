@@ -19,7 +19,8 @@
             text-align:center;
             vertical-align:middle;
             margin: 5px;
-         }
+          }
+
       </style>
    </metal:css>
 </head>
@@ -28,16 +29,10 @@
     <table>
       <thead>
         <th>Name</th>
-        <th>Email</th>
-        <th>Vegetarian</th>
-        <th>T-Shirt</th>
       </thead>
       <tbody tal:repeat="user view/get_attendee">
         <tr>
           <td tal:content="python:user[1].title"/>
-          <td tal:content="python:user[1].email"/>
-          <td>NO</td>
-          <td>XXXXXL</td>
         </tr>
       </tbody>
     </table>

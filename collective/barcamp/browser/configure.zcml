@@ -43,6 +43,30 @@
       template="templates/barcampattendance.pt"
       name="attendance_view"
       />
+
+  <browser:page
+      for="*"
+      class=".eventview.BarcampFNBView"
+      permission="zope2.View"
+      template="templates/barcampfnb.pt"
+      name="fnb_view"
+      />
+
+  <browser:page
+      for="*"
+      class=".eventview.BarcampHotelView"
+      permission="zope2.View"
+      template="templates/barcamphotel.pt"
+      name="hotel_view"
+      />
+
+  <browser:page
+      for="*"
+      class=".eventview.BarcampTourView"
+      permission="zope2.View"
+      template="templates/barcamptour.pt"
+      name="tour_view"
+      />
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>
